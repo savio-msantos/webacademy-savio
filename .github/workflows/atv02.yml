@@ -12,7 +12,7 @@ jobs:
       - name: Lista arquivos
         run: ls ${{ github.workspace }}
       - name: Status
-        run: echo "Status ${{ job.status }}.
+        run: echo "Status ${{ job.status }}."
       - name: Exibir a data e hora da execução
         run: date
       - name: Exibir o sistema operacional utilizado pelo runner
