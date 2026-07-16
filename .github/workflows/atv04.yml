@@ -1,1 +1,22 @@
+name: Quarto Workflow
 
+on:
+  push:
+jobs:
+  quarto-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Quarto passo"
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Validar README.me
+        run: test -f README.md
+      
+      - name: Validar License
+        run: test -f README.md
+    
+      - name: Validar .gitignore
+        run: test -f .gitignore
+
+        
