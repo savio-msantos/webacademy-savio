@@ -6,7 +6,7 @@ jobs:
   quarto-job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Quarto passo"
+      - run: echo "Quarto passo."
       - name: Checkout
         uses: actions/checkout@v5
 
