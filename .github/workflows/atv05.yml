@@ -19,7 +19,7 @@ jobs:
     needs: primeiro-job
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout.
         uses: actions/checkout@v5
 
       - name: Verificar README.md
